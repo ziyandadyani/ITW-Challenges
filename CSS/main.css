@@ -1,0 +1,47 @@
+div.color_strip {
+  text-align: center;
+}
+
+.grad1_text {
+  color: #dedbdb;
+}
+
+img {
+  position: relative;
+  top: 1em;
+}
+
+h3.job_title {
+  position: relative;
+  bottom: 1em;
+}
+
+.personal_statement {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+aside {
+  padding-left: 7.5em;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #daeef8;
+}
+
+article {
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+footer {
+  padding-left: 10em;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+/*# sourceMappingURL=main.css.map */
