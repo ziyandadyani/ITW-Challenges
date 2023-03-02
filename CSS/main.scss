@@ -9,6 +9,7 @@ div.color_strip{
 img{
 position: relative;
 top: 1em;
+border-radius: 50%;
 }
 
 h3.job_title{
@@ -21,8 +22,9 @@ h3.job_title{
  font-size: 1.2rem;
 }
 
-ul{
+ul.menu{
   list-style-type: none;
+  margin: 2em;
   
 }
 
@@ -41,12 +43,26 @@ body{
 article{
   padding-left: 10em;
   padding-right: 10em;
-  
+  margin: 2em;
 }
 
 footer{
   padding-left: 10em;
   padding-top: 1em;
   padding-bottom: 3em;
+//margin: 2em;
+  margin-top: 4em;
+  background-color: black;
+  color: whitesmoke;
+  a{
+    color: rgb(140, 206, 247);
+  }
 }
 
+.experience_section{
+  margin-top: 3em;
+}
+
+.skills_section{
+  margin-top: 3em;
+}
