@@ -25,6 +25,13 @@ h3.job_title {
 ul.menu {
   list-style-type: none;
   margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30em;
 }
 
 aside {
@@ -40,6 +47,7 @@ article {
   padding-left: 10em;
   padding-right: 10em;
   margin: 2em;
+  margin-top: 4em;
 }
 
 footer {
@@ -61,5 +69,77 @@ footer a {
 
 .skills_section {
   margin-top: 3em;
+}
+
+.QF1_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.QF2_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.job1_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.job2_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.cs_h {
+  padding-right: 7em;
+  width: 80em;
+}
+
+.q2_h {
+  padding-right: 11.5em;
+  width: 80em;
+}
+
+.j1_h {
+  padding-right: 11.7em;
+  width: 10em;
+}
+
+.j2_h {
+  padding-right: 11.7em;
+  width: 10em;
+}
+
+ul.skl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h4 {
+  font-weight: lighter;
+  margin-left: 4.5em;
+  position: relative;
+  top: 1em;
 }
 /*# sourceMappingURL=main.css.map */
