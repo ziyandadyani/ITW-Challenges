@@ -1,30 +1,101 @@
-div.color_strip {
-  text-align: center;
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.grad1_text {
-  color: #dedbdb;
+.myname {
+  color: grey;
+  font-size: 40pt;
+}
+
+header {
+  display: inline-block;
+  position: absolute;
+  left: 60em;
+}
+
+.namebackground {
+  width: 450px;
+  height: 97px;
+  background-color: #232d2e;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: 30em;
+  bottom: 0.5em;
 }
 
 img {
-  position: relative;
-  top: 1em;
-  border-radius: 50%;
+  z-index: -1;
 }
 
 h3.job_title {
+  color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  bottom: 1em;
+  bottom: 13.7em;
+  font-size: 40pt;
+  left: 14em;
+  margin: 0;
+}
+
+h3.job_title span {
+  font-size: 40pt;
+  position: absolute;
+  left: 3.7em;
+  padding: 0;
+  color: whitesmoke;
+}
+
+h3.dev {
+  font-size: 60pt;
+  position: absolute;
+  left: 12em;
+  bottom: 4.3em;
+}
+
+h3.dev span {
+  font-size: 12pt;
+  position: absolute;
+  top: 6.5em;
+  left: 27em;
 }
 
 .personal_statement {
+  width: 500px;
+  height: 500px;
+  line-height: 25pt;
   text-align: center;
   font-size: 1.2rem;
+  position: absolute;
+  left: 49em;
+  top: 18em;
 }
 
 ul.menu {
+  float: right;
   list-style-type: none;
-  margin: 2em;
+  margin-right: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,13 +105,20 @@ ul.menu {
   width: 30em;
 }
 
+ul.menu a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
 aside {
   padding-left: 7.5em;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #daeef8;
+  background-color: #232d2e;
+  color: whitesmoke;
+  width: 100%;
 }
 
 article {
@@ -262,7 +340,8 @@ select {
 }
 
 textarea {
-  width: 580px;
+  width: 576px;
+  border-radius: 5px;
 }
 
 form {
@@ -312,5 +391,79 @@ button {
 .form_section {
   position: relative;
   right: 7em;
+}
+
+.imagediv {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  overflow: auto;
+}
+
+.hero_section {
+  background: url("../images/original picture.jpg"), url("../images/jazmin-quaynor-jC7jCVzI2S0-unsplash.jpg");
+  background-size: 24% 76vh , 33% 100vh;
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: 40% , 0%;
+  background-position-y: 49.2% , 0%;
+}
+
+picture img {
+  width: 320px;
+  height: 480px;
+  position: absolute;
+  left: 25em;
+  top: 6em;
+  z-index: 100;
+}
+
+.number {
+  width: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  left: 40em;
+  bottom: 17em;
+}
+
+p.one {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  left: 53em;
+  top: 37em;
+}
+
+p.two {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  left: 54.5em;
+  top: 39em;
+}
+
+p.three {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  left: 56em;
+  top: 41em;
+}
+
+svg {
+  position: absolute;
+  left: 71.5em;
+  top: 28em;
+}
+
+section.content {
+  position: relative;
+  bottom: 8em;
 }
 /*# sourceMappingURL=main.css.map */
