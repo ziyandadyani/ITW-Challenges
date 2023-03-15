@@ -5,24 +5,44 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 54vw;
+  display: inline-block;
+  overflow: visible;
+  inline-size: -webkit-min-content;
+  inline-size: -moz-min-content;
+  inline-size: min-content;
 }
 
 .myname {
   color: grey;
-  font-size: 40pt;
-}
-
-header {
-  display: inline-block;
+  font-size: 3vw;
+  width: 27%;
+  height: 60px;
+  margin: 1%;
   position: absolute;
-  left: 60em;
+  left: 34%;
+  top: 0%;
+  margin-top: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .namebackground {
-  width: 450px;
+  width: 30vw;
   height: 97px;
   background-color: #232d2e;
   display: inline-block;
@@ -37,6 +57,7 @@ header {
           justify-content: center;
   position: relative;
   left: 30em;
+  margin: 0;
   bottom: 0.5em;
 }
 
@@ -52,15 +73,16 @@ h3.job_title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  bottom: 13.7em;
-  font-size: 40pt;
-  left: 14em;
+  position: absolute;
+  top: 15%;
+  font-size: 3vw;
+  left: 51.55%;
   margin: 0;
+  z-index: 23;
 }
 
 h3.job_title span {
-  font-size: 40pt;
+  font-size: 3vw;
   position: absolute;
   left: 3.7em;
   padding: 0;
@@ -68,41 +90,76 @@ h3.job_title span {
 }
 
 h3.dev {
-  font-size: 60pt;
+  font-size: 5vw;
   position: absolute;
-  left: 12em;
-  bottom: 4.3em;
+  left: 63%;
+  top: 15%;
 }
 
-h3.dev span {
-  font-size: 12pt;
+span.est {
+  font-size: 1vw;
   position: absolute;
   top: 6.5em;
   left: 27em;
 }
 
 .personal_statement {
-  width: 500px;
-  height: 500px;
-  line-height: 25pt;
+  width: 30vw;
+  height: 17vh;
+  line-height: 2.5vw;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3vw;
   position: absolute;
-  left: 49em;
-  top: 18em;
+  left: 63%;
+  top: 50%;
+}
+
+p.intro2 {
+  width: 80vw;
+  height: 33vh;
+  display: none;
+}
+
+.digits .number {
+  font-size: 1vw;
+  position: absolute;
+  left: 42%;
+  top: 30;
+}
+
+.digits .number .number2 p.one {
+  font-size: 1vw;
+}
+
+.digits .number .number2 p.two {
+  font-size: 1vw;
+}
+
+.digits .number .number2 p.three {
+  font-size: 1vw;
+}
+
+.arrow {
+  width: 6vw;
+  position: absolute;
+  left: 76%;
+  top: 63%;
+}
+
+.nav {
+  width: 60vw;
+  margin: 0;
 }
 
 ul.menu {
-  float: right;
   list-style-type: none;
-  margin-right: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 30em;
+  width: 100%;
 }
 
 ul.menu a {
@@ -118,14 +175,15 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #232d2e;
   color: whitesmoke;
-  width: 100%;
+  width: 100vw;
+  margin: 0;
 }
 
 article {
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 10%;
+  padding-right: 10%;
   margin: 2em;
-  margin-top: 4em;
+  margin-top: 13em;
 }
 
 footer {
@@ -290,12 +348,13 @@ img.logom {
 }
 
 fieldset {
-  width: 600px;
+  width: 400px;
   border-color: black;
 }
 
 .form_row {
-  width: 600px;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,7 +364,7 @@ fieldset {
 }
 
 .formgroup {
-  padding-bottom: 1em;
+  padding-bottom: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +375,7 @@ fieldset {
 
 .col {
   width: 280px;
-  height: 30px;
+  height: 28px;
   border-radius: 5px;
 }
 
@@ -345,7 +404,7 @@ textarea {
 }
 
 form {
-  width: 600px;
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,6 +414,7 @@ form {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  padding: 0;
 }
 
 .btn {
@@ -405,16 +465,16 @@ button {
   background-size: 24% 76vh , 33% 100vh;
   background-repeat: no-repeat, no-repeat;
   background-position-x: 40% , 0%;
-  background-position-y: 49.2% , 0%;
+  background-position-y: 96.2% , 0%;
 }
 
 picture img {
   width: 320px;
   height: 480px;
   position: absolute;
-  left: 25em;
-  top: 6em;
-  z-index: 100;
+  left: 27%;
+  top: 15%;
+  z-index: 20;
 }
 
 .number {
@@ -465,5 +525,259 @@ svg {
 section.content {
   position: relative;
   bottom: 8em;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: grey;
+  width: 50%;
+  height: 100vh;
+  z-index: 200;
+  text-transform: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+.nav ul a {
+  color: white;
+  padding: 0.75em 2em;
+  display: block;
+}
+
+.nav ul a:hover {
+  background: #d1d1d1;
+  color: black;
+}
+
+.nav svg {
+  position: absolute;
+  left: 90%;
+  top: 4%;
+  width: 2.5em;
+}
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mini DESKTOP 1023px to 1400px <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+@media only screen and (min-width: 1024px) {
+  .menu_icon {
+    display: none;
+  }
+  .nav {
+    position: unset;
+    display: block;
+    height: auto;
+    background: none;
+  }
+  .nav .close_icon {
+    display: none;
+  }
+  .nav ul {
+    margin-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav ul a {
+    color: whitesmoke;
+    font-size: .9rem;
+    padding: .5em 1.5em;
+  }
+  .nav ul a:hover {
+    background: none;
+    color: #909090;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    width: 100vw;
+  }
+  header {
+    width: 10vw;
+    position: absolute;
+    left: 1vw;
+    top: 2vw;
+    overflow: visible;
+  }
+  header nav .menu_icon {
+    width: 1vw;
+  }
+  .personal_statement {
+    width: 30vw;
+    height: 17vh;
+    line-height: 2.5vw;
+    text-align: center;
+    font-size: 1.3vw;
+    position: absolute;
+    left: 52vw;
+    top: 25vw;
+  }
+  svg.arrow {
+    display: none;
+  }
+  .number {
+    width: 1vw;
+    position: absolute;
+    left: 56vw;
+    top: 30vw;
+  }
+  .myname {
+    color: grey;
+    font-size: 3vw;
+    width: 27%;
+    margin: 1%;
+    position: absolute;
+    left: 38vw;
+    top: 0%;
+    margin-top: 0;
+  }
+  h3.job_title {
+    color: grey;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 6vw;
+    font-size: 3vw;
+    left: 42%;
+    margin: 0;
+    z-index: 23;
+  }
+  h3.job_title span {
+    font-size: 3vw;
+    position: absolute;
+    left: 3.7em;
+    padding: 0;
+    color: whitesmoke;
+  }
+  h3.dev {
+    font-size: 5vw;
+    position: absolute;
+    left: 53.5%;
+    top: 6vw;
+  }
+  span.est {
+    font-size: 1vw;
+    position: absolute;
+    top: 6.5em;
+    left: 27em;
+  }
+  p.lastnum {
+    display: none;
+  }
+  .number2 {
+    display: none;
+  }
+  p.intro2 {
+    display: none;
+  }
+  picture {
+    display: none;
+  }
+  .hero_section {
+    background-size: 27% 40vw , 38% 55vw;
+    background-position-x: 30% , 0%;
+    background-position-y: 10vw , 0%;
+  }
+  .QF1_container {
+    display: block;
+  }
+  .QF2_container {
+    display: block;
+  }
+  .job1_container {
+    display: block;
+  }
+  .job2_container {
+    display: block;
+  }
+  ul.skl {
+    display: block;
+  }
+  footer {
+    display: block;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MOBILE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+  .hero_section {
+    background: url("../images/original picture.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  .hero_section .namebackground {
+    display: none;
+  }
+  .hero_section div.profile {
+    display: none;
+  }
+  .hero_section div.words h3 {
+    display: none;
+  }
+  .content {
+    padding-top: 20%;
+  }
+  .QF1_container {
+    display: block;
+  }
+  .QF2_container {
+    display: block;
+  }
+  .job1_container {
+    display: block;
+  }
+  .job2_container {
+    display: block;
+  }
+  ul.skl {
+    display: block;
+  }
+  form {
+    padding: 10%;
+    width: 80%;
+    height: 80%;
+  }
+  .personal_statement {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .myname {
+    display: none;
+  }
+  footer {
+    display: block;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .intro2 {
+    display: block;
+    font-size: 5vw;
+  }
+  .number2 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

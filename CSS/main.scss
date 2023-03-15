@@ -1,31 +1,57 @@
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> DEFAULT/ DESKTOP <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< //
+
 header{
   display: flex;
   align-items:flex-start;
-  justify-content: space-between;
+  justify-content: center;
+  position: absolute;
+  width:fit-content;
+  left: 54vw;
+  display: inline-block;
+  overflow: visible;
+  inline-size: min-content;
+
 }
 
 .myname{
   color: grey;
-  font-size: 40pt;
-   
+  font-size: 3vw;
+  width: 27% ;
+  height: 60px;
+  margin: 1%;
+  position: absolute;
+  left: 34%;
+  top: 0%;
+  margin-top: 0.5;
+  display: flex;
+  justify-content: center;
+   align-items: center;
 }
 
-header{
-  display: inline-block;
-  position: absolute;
-  left: 60em;
-}
+//header{
+  
+  //display: inline-block;
+  //inline-size: min-content;
+  //position: absolute;
+  //left:50%;
+//}
 
 .namebackground{
-  width: 450px;
+  //width: 450px;
+  width: 30vw;
   height: 97px;
   background-color: #232d2e;
+  //background-color: pink;
   display: inline-block;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   left: 30em;
+  margin: 0;
+  //position: absolute;
+  //left: 15%;
+
   bottom: 0.5em;
 }
 
@@ -40,13 +66,14 @@ h3.job_title{
   color: grey;
   display: flex;
   align-items: center;
-  position: relative;
-  bottom: 13.7em;
-  font-size: 40pt;
-  left: 14em;
+  position: absolute;
+  top: 15%;
+  font-size: 3vw;
+  left: 51.55%;
   margin: 0;
+  z-index: 23;
   span{
-    font-size: 40pt;
+    font-size: 3vw;
     position: absolute;
     left: 3.7em;
     padding:0;
@@ -56,36 +83,83 @@ h3.job_title{
 }
 
 h3.dev{
-  font-size: 60pt;
+  font-size: 5vw;
   position: absolute;
-  left: 12em;
-  bottom: 4.3em;
-  span{
-    font-size: 12pt;
-    position:absolute;
-    top: 6.5em;
-    left: 27em;
+  left: 63%;
+  top: 15%;
+   
+}
+
+span.est{
+  font-size:1vw;
+  position:absolute;
+  top: 6.5em;
+  left: 27em;
+}
+
+//.words{
+  //position: absolute;
+  //left: 50%;
+//}
+
+.personal_statement{
+  width: 30vw;
+  height: 17vh;
+  line-height: 2.5vw;
+  text-align: center;
+  font-size: 1.3vw;
+  position: absolute;
+  left: 63%;
+  top: 50%;
+}
+
+p.intro2{
+  width: 80vw;
+  height:33vh ;
+  display: none;
+}
+
+.digits{
+  .number{
+    font-size: 1vw;
+    position: absolute;
+    left: 42%;
+    top: 30;
+
+  .number2{
+    p.one{
+      font-size: 1vw;
+    }
+    p.two{
+      font-size: 1vw;
+    }
+    p.three{
+      font-size: 1vw;  
+  }
+  }
   }
 }
 
-.personal_statement{
-  width: 500px;
-  height: 500px;
-  line-height: 25pt;
-  text-align: center;
-  font-size: 1.2rem;
+.arrow {
+  width: 6vw;
   position: absolute;
-  left: 49em;
-  top: 18em;
+  left: 76%;
+  top: 63%;
 }
-
+.nav{
+  width: 60vw;
+  margin: 0;
+  //position: absolute;
+  //left: 60vw;
+}
 ul.menu{
-  float: right;
+  
   list-style-type: none;
-  margin-right: 2em;
+  //margin-right: 2em;
   display: flex;
   justify-content: space-between;
-  width: 30em;
+  width: 100%;
+
   a{
     color: whitesmoke;
     text-decoration: none;
@@ -101,17 +175,19 @@ body{
   font-family: "Poppins", sans-serif;
   background-color: #232d2e;
   color: whitesmoke;
-  width: 100%;
+  width: 100vw;
+  margin: 0;
+  //width: min-content;
   
   
 }
 
 
 article{
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 10%;
+  padding-right: 10%;
   margin: 2em;
-  margin-top: 4em;
+  margin-top: 13em;
 }
 
 footer{
@@ -233,27 +309,30 @@ img.logom{
 // Styling HTML Form ('Get in touch')
 
 fieldset{
-  width: 600px;
+  width: 400px;
   border-color: black;
 }
 
 .form_row{
-  width: 600px;
+  //width: 600px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   padding-top: 0.5em;
 
 }
 
+
 .formgroup{
-  padding-bottom: 1em;
+  padding-bottom: 2%;
   display: flex;
   justify-content: center;
 }
 
 .col{
   width: 280px;
-  height: 30px;
+  height: 28px;
   border-radius: 5px;
   
 }
@@ -284,11 +363,12 @@ textarea{
 }
 
 form{
- width: 600px;
+ width: 400px;
  //background-color: rgb(63, 63, 63);
  display: flex;
  justify-content: center;
  align-items: baseline;
+ padding: 0;
 }
 
 .btn{
@@ -328,20 +408,20 @@ button{
 }
 
 .hero_section{
-  background: url('../images/original\ picture.jpg') , url('../images/jazmin-quaynor-jC7jCVzI2S0-unsplash.jpg') ;
+  background: url('../images/original picture.jpg') , url('../images/jazmin-quaynor-jC7jCVzI2S0-unsplash.jpg') ;
   background-size: 24% 76vh , 33% 100vh;
   background-repeat: no-repeat, no-repeat;
   background-position-x: 40% , 0%;
-  background-position-y: 49.2% , 0% ;
+  background-position-y: 96.2% , 0% ;
 }
 
 picture img{
   width: 320px;
   height: 480px;
   position: absolute;
-  left: 25em;
-  top: 6em;
-  z-index: 100;
+  left: 27%;
+  top: 15%;
+  z-index: 20;
 }
 
 .number{
@@ -386,4 +466,332 @@ svg{
 section.content{
   position: relative;
   bottom: 8em;
+}
+
+.nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: grey;
+  width: 50%;
+  height: 100vh;
+  z-index: 200;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em; 
+
+    a{
+      color: white;
+      padding: 0.75em 2em ;
+      display: block;
+
+      &:hover{
+        background: rgb(209, 209, 209);
+        color: black;
+      } 
+    }
+    
+  }
+
+ svg{
+   position: absolute;
+   left: 90%;
+   top:4%;
+   //margin: 2em;
+   width: 2.5em;
+   //padding: 2em
+}
+}
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mini DESKTOP 1023px to 1400px <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+
+ @media only screen and (min-width:1024px) {
+ .menu_icon{
+  display:none;
+ }
+ 
+ .nav{
+  //transform: translateX(0);
+  position: unset;
+  display:block;    //learn more about diplay property \undoes display flex
+  height:auto;
+  background: none;
+  
+   .close_icon{
+    display: none;
+   }
+  
+   ul{
+   margin-top: 1em;
+   display: flex;
+       a{
+         color: whitesmoke;
+         font-size: .9rem;
+         padding: .5em 1.5em;
+
+         &:hover {
+          background: none;
+          color: rgb(144, 144, 144);
+         }
+         }
+   }
+ }
+
+ 
+}
+
+
+  
+ 
+ 
+
+///* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> TAB  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+@media only screen and (max-width:1024px){
+
+  body{
+  width: 100vw;
+ }
+
+ header{
+   width: 10vw;
+   position: absolute;
+   left: 1vw;
+   top:2vw;
+   overflow: visible;
+   nav{
+     .menu_icon{
+       width: 1vw;
+      
+      
+     }
+   }
+   
+ }
+
+ .personal_statement{
+  width: 30vw;
+  height: 17vh;
+  line-height: 2.5vw;
+  text-align: center;
+  font-size: 1.3vw;
+  position: absolute;
+  left: 52vw;
+  top: 25vw;
+ }
+
+ svg.arrow{
+  display: none;
+ }
+  
+ 
+
+ 
+  .number{
+  width: 1vw;
+  position: absolute;
+  left:56vw;
+  top :30vw;
+ }
+ 
+ .myname{
+  color: grey;
+  font-size: 3vw;
+  width: 27% ;
+  margin: 1%;
+  position: absolute;
+  left:38vw;
+  top: 0%;
+  margin-top: 0
+ }
+ 
+
+ h3.job_title{
+  color: grey;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 6vw;
+  font-size: 3vw;
+  left: 42%;
+  margin: 0;
+  z-index: 23;
+  span{
+    font-size: 3vw;
+    position: absolute;
+    left: 3.7em;
+    padding:0;
+    color: whitesmoke;
+    
+  }
+ }
+
+ h3.dev{
+  font-size: 5vw;
+  position: absolute;
+  left: 53.5%;
+  top: 6vw;
+ }
+
+ span.est{
+  font-size:1vw;
+  position:absolute;
+  top: 6.5em;
+  left: 27em;
+  }
+ 
+
+  p.lastnum{
+  display:none;
+ }
+
+ .number2{
+  display: none;
+ }
+
+ p.intro2{
+  display: none;
+ }
+
+ picture{
+   display: none;
+  }
+  .hero_section{
+  background-size: 27% 40vw , 38% 55vw;
+  background-position-x: 30% , 0%;
+  background-position-y: 10vw , 0% ;
+  }
+ 
+
+ .QF1_container{
+  display: block;
+ }
+
+ .QF2_container{
+  display: block;
+ }
+
+ .job1_container{
+  display: block;
+ }
+
+ .job2_container{
+  display: block;
+ }
+
+ ul.skl{
+  display: block;
+ }
+
+ footer{
+  display: block;
+ }
+}
+// @media only screen and (min-width:850px){
+  //.herosection{
+    //background-size: 30% 76vh, 47% 100vh ;
+// }
+//}
+
+ //@media only screen and (min-width:880px){
+  //.herosection{
+    //background-size: 22% 76vh, 47% 100vh ;
+ //}
+//} 
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MOBILE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+ @media only screen and (max-width:768px){
+
+ body{
+  width: 100vw;
+ }
+  
+ .hero_section{ 
+  background: url('../images/original picture.jpg');
+  background-size:cover;
+  width: 100vw;
+  height: 100vh;
+
+   .namebackground{
+    display: none;
+  }
+
+  div.profile{
+    display: none; 
+  }
+
+  div.words{
+    h3{
+      display: none;
+    }
+  }
+ }
+ 
+
+  .content{
+  padding-top: 20%;
+  }
+
+  .QF1_container{
+  display: block;
+ }
+
+ .QF2_container{
+  display: block;
+ }
+
+  .job1_container{
+  display: block;
+  }
+
+  .job2_container{
+  display: block;
+  }
+
+  ul.skl{
+  display: block;
+ }
+
+ form{
+  padding: 10%;
+  width: 80%;
+  height: 80%;
+ 
+  }
+
+  .personal_statement{
+    display: none;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .myname{
+    display: none;
+  }
+
+  footer{
+    display: block;
+  }
+           
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .intro2{
+    display: block;
+    font-size: 5vw;
+  }
+
+  .number2{
+    display: none;
+  }
 }
